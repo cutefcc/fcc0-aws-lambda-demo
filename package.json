@@ -1,0 +1,24 @@
+{
+  "name": "fcc0-aws-lamdba-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "esbuild ./src/index.ts --bundle --sourcemap --platform=node --target=es2020 --outfile=dist/index.js",
+    "postbuild": "cd dist && zip -r fcc0AwsServerlessFn.zip *.*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.145.0",
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.101",
+    "@types/node": "^18.6.5",
+    "esbuild": "^0.14.53",
+    "node-fetch": "^3.2.10"
+  }
+}

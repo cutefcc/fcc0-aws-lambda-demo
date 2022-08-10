@@ -1,0 +1,53 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "fcc0-aws-lamdba-demo",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/liuhao/Documents/fcc/fcc0-aws-lamdba-demo"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/liuhao/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/liuhao/Documents/fcc/fcc0-aws-lamdba-demo/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/liuhao/Documents/fcc/fcc0-aws-lamdba-demo",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "aws-lamdba is not in the npm registry, or you have no permission to fetch it.\n\nAn authorization header was used: Bearer npm_[hidden]",
+    "request": {
+      "authHeaderValue": "Bearer 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",
+      "url": "https://registry.npmjs.org/aws-lamdba"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "aws-lamdba",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "aws-lamdba",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/aws-lamdba: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npmjs.org/aws-lamdba: Not Found - 404\n    at RetryOperation._fn (/Users/liuhao/pnpm-global/5/node_modules/.pnpm/pnpm@7.0.1/node_modules/pnpm/dist/pnpm.cjs:84258:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}
