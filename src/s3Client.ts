@@ -6,7 +6,7 @@ import {
 } from "@aws-sdk/client-s3";
 import fetch from "node-fetch";
 const uploadFileToBucket = async (imageName: string, imageURI: string) => {
-  // base64 + http url
+  // base64 +  http url
   const s3Client = new S3Client({ region: "us-west-2" });
   const result = {
     msg: "Uploading",
